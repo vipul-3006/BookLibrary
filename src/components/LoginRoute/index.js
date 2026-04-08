@@ -97,7 +97,7 @@ class LoginRoute extends Component {
                 type={passwordType}
                 id="password"
                 className="input"
-                placeholder="myth@789"
+                placeholder="myth#789"
                 value={password}
                 onChange={this.onChangePassword}
               />
