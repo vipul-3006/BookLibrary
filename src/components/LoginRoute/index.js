@@ -21,7 +21,7 @@ class LoginRoute extends Component {
   onSubmitSuccess = jwtToken => {
     Cookies.set('jwt_token', jwtToken, {expires: 30})
     const {history} = this.props
-    history.replace("/")
+    history.replace('/')
   }
 
   onClickShowPassword = event => {
@@ -84,7 +84,7 @@ class LoginRoute extends Component {
                 type="text"
                 className="input"
                 id="username"
-                placeholder="USERNAME"
+                placeholder="agastya"
                 value={username}
                 onChange={this.onChangeUsername}
               />
@@ -97,7 +97,7 @@ class LoginRoute extends Component {
                 type={passwordType}
                 id="password"
                 className="input"
-                placeholder="PASSWORD"
+                placeholder="myth@789"
                 value={password}
                 onChange={this.onChangePassword}
               />
